@@ -29,7 +29,7 @@
 	font-size:40px;
     color:aliceblue;
     font-family:'Lato', sans-serif;
-    line-height:4em;
+    line-height:2em;
     font-weight:100;
     
 }
@@ -114,6 +114,11 @@
     letter-spacing: 0.025em;
 }
 
+.intro-area 
+{
+    background-color:silver;
+}
+
 .intro-block 
 {
 	position:relative;
@@ -158,7 +163,26 @@
     box-shadow: 0px 0px 0px 10px #CCEEF9;
 }
 
+.intro-block .fas
+{
+    width:63px;
+    height:63px;
+    font-size:30px;
+    color:white;
+    line-height:2;
+    background:orange;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+
 .intro-block:hover .fab, .intro-block.active .fab
+{
+    background:white;
+    color:deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block:hover .fas, .intro-block.active .fas
 {
     background:white;
     color:deepskyblue;
@@ -184,21 +208,14 @@
     color:f6f6f6;
 }
 
-.feature-area 
-{
-	background-image:linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/img1.jpg);
-    background-position: center;
-    background-attachment: fixed;
-}
-
 .title h2,p
 {
-    color:white;
+    color:black;
 }
 
 .single-feature h3
 {
-    color:white;
+    color:black;
 }
 
 .single-feature   
@@ -208,8 +225,8 @@
     float: left;
     padding: 30px 0;
     text-align: center;
-    border-right: 1px solid #65c8e5;
-    border-bottom: 1px solid #65c8e5;
+    border-right: 1px solid orange;
+    border-bottom: 1px solid orange;
     transition: .3s ease;
     -webkit-transition: .3s ease;
     -moz-transition: .3s ease;
@@ -275,6 +292,11 @@
 
 .feature-area {
 	padding: 100px 0px;
+    
+}
+
+.project {
+	margin-top:1px;
 }
 
 .single-feature:nth-last-child(2)
@@ -298,9 +320,9 @@
     color: black;
 }
 
-.container
-{
-    margin-bottom:150px;
+.feature-area {
+	margin-bottom:50px;
+    margin-top:-45px;
 }
 
 .more-feature-area .title h2
@@ -310,20 +332,24 @@
 
 .more-feature-area img
 {
-    margin-left:0px;
+    margin-left:50%;
     width: 75%;
     height: 50%;
 }
 
 .more-feature-area .title .sub-heading p
 {
-    color: black;
+    margin-top:10px;
+    line-height:30px;
+    font-size:25px;
+    color:silver;
 }
 
 .more-feature-area
 {
     padding: 200px 0;
     color:black;
+    
 }
 
 .feature-list ul
@@ -384,7 +410,6 @@
 
 .testimonials
 {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(..//images/img1.jpg);
     background-size: cover;
     background-position:center;
     background-attachment:fixed;
@@ -392,6 +417,7 @@
     padding-bottom: 120px;
     color:white;
     margin-top:-100px;
+    background-color:silver;
 }
 
 .testimonials .carousel-indicators
@@ -470,6 +496,16 @@
     margin-bottom:600px;
 }
 
+.tools 
+{
+    margin-top:-25px;
+}
+
+.awesome 
+{
+    margin-top:-125px;
+}
+
 
 /* ---- reset ---- */
 body {
@@ -498,7 +534,7 @@ canvas {
 /*---- arrow ----*/
 
 .arrow {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   margin-left:-20px;
